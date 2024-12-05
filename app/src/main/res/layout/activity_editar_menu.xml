@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:theme="?attr/actionBarTheme"
+        android:title="Gerenciar Dados"
+        app:subtitle="Adicionar item ao menu"
+        app:subtitleTextColor="#FFFFFF"
+        app:titleTextColor="#000000" />
+    <!-- Formulário de Inserção -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#EDEDED">
+        <EditText
+            android:id="@+id/et_nome_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Item"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/et_descricao_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição (opcional)"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/et_consumo_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btn_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Salvar" />
+    </LinearLayout>
+    <!-- Lista de Dados -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/redirectListagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:contentDescription="Adicionar Item"
+        android:src="@drawable/baseline_add_24" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lista_dados"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+    <!-- Botão de Ação Flutuante -->
+</LinearLayout>

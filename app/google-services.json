@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1006519942350",
+    "project_id": "exame-mobile-13c75",
+    "storage_bucket": "exame-mobile-13c75.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006519942350:android:5221bbf97c7bb3ed33e49f",
+        "android_client_info": {
+          "package_name": "com.example.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVkBsf_YpHIefnUgINSV4e-3eb6BryuXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
